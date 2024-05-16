@@ -6,11 +6,8 @@ interface props {
 
 export function NavButton({ imageId }: props) {
   return (
-    <button className="w-10 h-10 rounded-lg bg-black">
-      <img
-        src={imageId}
-        alt={""}
-      />
+    <button className="w-[10rem] h-[10rem] rounded-lg bg-black">
+      <img src={imageId} alt={""} />
     </button>
   );
 }
