@@ -2,7 +2,7 @@ import { CarouselCard } from "./carousel-card";
 
 export function RecommendedCarousel() {
   return (
-    <div className="h-[60rem] mt-[2rem] pt-[2rem] w-full flex">
+    <div className="h-[60rem] mt-[2rem] pt-[2rem] w-full flex justify-center">
       <CarouselCard
         index={0}
         fitName="Pool Party"
@@ -13,7 +13,7 @@ export function RecommendedCarousel() {
       />
       <CarouselCard
         index={2}
-        fitName="Nightcore Style"
+        fitName="Nightcore"
       />
     </div>
   );
