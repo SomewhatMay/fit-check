@@ -1,0 +1,469 @@
+{
+  "Nike": {
+    "Shirts": [
+      {
+        "name": "Nike Miler",
+        "price": "$55",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b54ea6f0-11ca-482a-bb3c-d3aef040953f/miler-short-sleeve-running-top-mVBc7r.png"
+      },
+      {
+        "name": "Nike Ready",
+        "price": "$55",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0c3f6310-ef30-463d-b669-601b001ffe18/ready-dri-fit-short-sleeve-fitness-top-4M1m1s.png"
+      },
+      {
+        "name": "Nike Rise 365",
+        "price": "$68",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2efc0a7f-8875-4446-be2f-26e4f9130d76/rise-365-dri-fit-short-sleeve-running-top-bHZcg9.png"
+      },
+      {
+        "name": "Jordan Flight Essentials",
+        "price": "$60",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/123bf113-f8dc-46f7-a0ec-04d747de9a07/jordan-flight-essentials-oversized-t-shirt-W4NV33.png"
+      },
+      {
+        "name": "Nike ACG",
+        "price": "$68",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/aaabe3fd-0f4b-4667-bd54-321d170ca4e6/acg-dri-fit-t-shirt-3nXWDz.png"
+      },
+      {
+        "name": "Jordan Flight Essentials",
+        "price": "$60",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bc49776a-96f6-4a88-903f-8d40f0c0153d/jordan-flight-essentials-t-shirt-C1JL54.png"
+      },
+      {
+        "name": "Nike Sportswear",
+        "price": "$55",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/649e6517-5fc1-491a-aa93-ad0e8c535a46/sportswear-max90-t-shirt-vvB4j6.png"
+      },
+      {
+        "name": "Nike",
+        "price": "$55",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6784b081-9f76-4776-b518-5fe234666703/max90-basketball-t-shirt-lmHQ6X.png"
+      },
+      {
+        "name": "Nike Sportswear",
+        "price": "$64",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/60a88d87-8161-4fed-818d-6220b7fa5b7d/sportswear-t-shirt-cRnZxH.png"
+      },
+      {
+        "name": "Nike Solo Swoosh",
+        "price": "$110",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ed11b306-954d-4b2a-9042-f42df5aefbd1/solo-swoosh-fleece-crew-TKDGzc.png"
+      },
+      {
+        "name": "Nike Sportswear Club Fleece",
+        "price": "$80",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3903931e-af6d-4f21-be1d-0b4d3c50788f/sportswear-club-fleece-pullover-hoodie-32Tm3L.png"
+      },
+      {
+        "name": "Nike Sportswear Tech Fleece Windrunner",
+        "price": "$122.99",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d745762c-a33b-42c0-b441-affb9fedb26a/sportswear-tech-fleece-windrunner-hoodie-XGC5Gr.png"
+      },
+      {
+        "name": "Nike Sportswear Club Fleece",
+        "price": "$75",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c122d2b3-d24f-4ebb-b19c-ab59da1c6334/sportswear-club-fleece-crew-jsm5Fd.png"
+      },
+      {
+        "name": "Nike Solo Swoosh",
+        "price": "$120",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9cb9b5ae-727c-4fad-9e9b-31b162367d37/solo-swoosh-fleece-pullover-hoodie-Tdnb6B.png"
+      },
+      {
+        "name": "Nike Sportswear Club Fleece",
+        "price": "$85",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e78fd7ce-4210-4124-a6db-79c1e638f62f/sportswear-club-fleece-hoodie-qzVJfR.png"
+      },
+      {
+        "name": "Jordan Brooklyn Fleece",
+        "price": "$85",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f45000b9-69fd-4498-b6b5-599962dac6c6/jordan-brooklyn-fleece-printed-pullover-hoodie-K3SZDv.png"
+      },
+      {
+        "name": "Team 31 Standard Issue",
+        "price": "$125",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/16406322-e769-453b-a433-b8602897f41d/team-31-standard-issue-nba-pullover-hoodie-QKKndz.png"
+      },
+      {
+        "name": "Jordan Brooklyn Fleece",
+        "price": "$80",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/36d3fac3-6615-4720-bf85-0930c7e1adaf/jordan-brooklyn-fleece-crew-neck-sweatshirt-ZjbhZB.png"
+      },
+      {
+        "name": "Nike Pro Dri-FIT",
+        "price": "$50",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e2be735d-f988-4225-bcf5-610cdf1254a9/pro-dri-fit-crop-top-qXxtl3.png"
+      },
+      {
+        "name": "Jordan Sport",
+        "price": "$50",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/51e49ff6-c447-4663-90f6-ca61370901cb/jordan-sport-diamond-short-sleeve-top-ZV5vqH.png"
+      },
+      {
+        "name": "Nike One Classic",
+        "price": "$64",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4eb5b03e-e168-4968-b3ff-0b87276ab9a5/one-classic-dri-fit-long-sleeve-top-ndqH9P.png"
+      },
+      {
+        "name": "Jordan",
+        "price": "$50",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/cbbb90ab-b47c-4f81-a842-fff94640ecf2/jordan-t-shirt-X3tXSL.png"
+      },
+      {
+        "name": "Nike Running Division",
+        "price": "$100",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8f15c2e4-6aa9-4ad6-8c89-a9d0d38b09cb/running-division-dri-fit-adv-short-sleeve-running-top-J0Ltpr.png"
+      },
+      {
+        "name": "Nike One Classic",
+        "price": "$55",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fce0626c-2505-4151-aec5-a3fb1fcb127a/one-classic-dri-fit-short-sleeve-top-Jpzltk.png"
+      },
+      {
+        "name": "Nike Sportswear Chill Knit",
+        "price": "$68",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b74602d3-42cf-4960-b8f8-3b9b975f23ea/sportswear-chill-knit-tight-scoop-back-long-sleeve-mini-rib-top-JKXdKx.png"
+      },
+      {
+        "name": "Nike One Swoosh",
+        "price": "$60",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/645b3fbf-3c67-460c-8cbc-f5c6e8b86bc6/one-swoosh-dri-fit-short-sleeve-running-top-9s4L4V.png"
+      },
+      {
+        "name": "Nike Sportswear Essential",
+        "price": "$65",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/026a3a23-5f2e-4bad-b09a-3ab43ae0028c/sportswear-essential-ribbed-long-sleeve-mod-crop-top-mQtbq4.png"
+      },
+      {
+        "name": "Nike Sportswear Chill Knit",
+        "price": "$55",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/19dd9a7c-7782-4825-8afb-1b38816cad5a/sportswear-chill-knit-tight-cropped-mini-rib-tank-top-Hht8X2.png"
+      },
+      {
+        "name": "Nike Sportswear Tech Fleece Windrunner",
+        "price": "$122.99",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/28df2743-cedd-4054-9634-50197eecbe3a/sportswear-tech-fleece-windrunner-hoodie-fbnfVT.png"
+      },
+      {
+        "name": "Nike Sportswear Phoenix Fleece",
+        "price": "$85",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cfd2408d-861c-4518-a0b8-0224b921cf21/sportswear-phoenix-fleece-over-oversized-crew-neck-sweatshirt-5pslkM.png"
+      },
+      {
+        "name": "Nike Sportswear Club Fleece",
+        "price": "$80",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3903931e-af6d-4f21-be1d-0b4d3c50788f/sportswear-club-fleece-pullover-hoodie-32Tm3L.png"
+      },
+      {
+        "name": "Nike Sportswear Phoenix Fleece",
+        "price": "$85",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e71bdbf8-644e-4e8f-a885-14a231babc77/sportswear-phoenix-fleece-oversized-crew-neck-sweatshirt-MPCf8q.png"
+      },
+      {
+        "name": "Nike Sportswear Phoenix Fleece",
+        "price": "$95",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2415778b-a472-4f8b-8985-a90e3d720c41/sportswear-phoenix-fleece-over-oversized-pullover-hoodie-lCW484.png"
+      },
+      {
+        "name": "Nike Sportswear Phoenix Fleece",
+        "price": "$95",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0cace56f-d138-42e8-a0dc-1a6ededb34bb/sportswear-phoenix-fleece-oversized-pullover-hoodie-TD0kG3.png"
+      },
+      {
+        "name": "Nike Sportswear Phoenix Fleece",
+        "price": "$100",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3829e676-d258-4001-9aeb-729d183483cc/sportswear-phoenix-fleece-oversized-hoodie-VhmL99.png"
+      },
+      {
+        "name": "Nike Sportswear",
+        "price": "$85",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9f37bd16-5bc1-4046-885c-c39c7e0b4eaa/sportswear-oversized-fleece-crew-neck-sweatshirt-sVRQq6.png"
+      },
+      {
+        "name": "Nike Sportswear Phoenix Fleece",
+        "price": "$95",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f808c7b7-9dc1-4678-80b1-e93555aa406f/sportswear-phoenix-fleece-pullover-hoodie-X9XVZM.png"
+      }
+    ],
+    "Pants": [
+      {
+        "name": "Nike Club",
+        "price": "$115",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2dc76c80-fc2b-4d24-9699-01b2277b8bf4/club-cargo-trousers-7g3VJK.png"
+      },
+      {
+        "name": "Nike Sportswear Tech Fleece",
+        "price": "$120.99",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8430bf91-7f0c-4749-b1d8-d93375980b61/sportswear-tech-fleece-joggers-sG5GnP.png"
+      },
+      {
+        "name": "Nike Sportswear Club",
+        "price": "$80",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/rhiqox5cfyn4mtdwpe5j/sportswear-club-joggers-FcQ46n.png"
+      },
+      {
+        "name": "Nike Life",
+        "price": "$115",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/00d81c96-a67b-4503-8a2a-3cbaba9fcf60/life-el-chino-trousers-Mkdqdl.png"
+      },
+      {
+        "name": "Nike Solo Swoosh",
+        "price": "$120",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/726449bd-35ce-473c-a437-d0addd54c4e5/solo-swoosh-fleece-trousers-dFH1kV.png"
+      },
+      {
+        "name": "Nike Sportswear Club Fleece",
+        "price": "$75",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/th1ozuaaas9eiu3wvkgk/sportswear-club-fleece-trousers-2bHDLX.png"
+      },
+      {
+        "name": "Nike Dri-FIT Academy",
+        "price": "$68",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/58fd4a98-d3b5-4514-a750-747f3c758aa5/dri-fit-academy-dri-fit-football-pants-7d1DhS.png"
+      },
+      {
+        "name": "Nike Sportswear Club Fleece",
+        "price": "$75",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2b98ae55-38d5-45c6-98b8-c3ff631858b1/sportswear-club-fleece-joggers-27ggJk.png"
+      },
+      {
+        "name": "Nike Club",
+        "price": "$100",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/97934914-3290-4ad8-a321-957768660594/club-woven-cargo-trousers-37q0b1.png"
+      },
+      {
+        "name": "Nike Sportswear Phoenix Fleece",
+        "price": "$85",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3ac7ee0d-9431-4c8b-8459-fa7d683701ae/sportswear-phoenix-fleece-high-waisted-oversized-tracksuit-bottoms-00TZkD.png"
+      },
+      {
+        "name": "Nike Sportswear Everything Wovens",
+        "price": "$100",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b0c01caa-28bf-4a5a-a72b-cf6cf622d27a/sportswear-everything-wovens-mid-rise-open-hem-trousers-Wr2h2k.png"
+      },
+      {
+        "name": "Nike Sportswear Phoenix Fleece",
+        "price": "$85",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a5a295fc-d24c-4281-b47a-68c863d7d67e/sportswear-phoenix-fleece-high-waisted-oversized-tracksuit-bottoms-ptJXBs.png"
+      },
+      {
+        "name": "Nike Sportswear Phoenix Plush",
+        "price": "$100",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0ace9863-9e95-4af3-9cef-c2a7d38df738/sportswear-phoenix-plush-high-waisted-wide-leg-cosy-fleece-trousers-xbls5d.png"
+      },
+      {
+        "name": "Nike Dri-FIT Fast",
+        "price": "$95",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/275cb645-b91c-45da-a34b-65e6adef591e/dri-fit-fast-mid-rise-7-8-running-trousers-Rh8XW8.png"
+      },
+      {
+        "name": "Nike Sportswear Phoenix Fleece",
+        "price": "$85",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7feee036-8ae3-41a7-b9ba-13f6fd115aeb/sportswear-phoenix-fleece-mid-rise-tracksuit-bottoms-wT34kg.png"
+      },
+      {
+        "name": "Nike Solo Swoosh",
+        "price": "$120",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ceb84bbd-96ed-46f4-9ec8-e6bbe1e78596/solo-swoosh-fleece-trousers-D5Tgs8.png"
+      },
+      {
+        "name": "Nike Sportswear Phoenix Fleece",
+        "price": "$85",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f3aea468-128b-4107-b489-53ecc0b49e9b/sportswear-phoenix-fleece-high-waisted-joggers-1qndqr.png"
+      },
+      {
+        "name": "Nike Sportswear",
+        "price": "$110",
+        "imageUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6175abfb-fc29-4bfb-93b2-7e4774002770/sportswear-high-waisted-loose-woven-cargo-trousers-0PHvTC.png"
+      }
+    ]
+  },
+  "Adidas": {
+    "Shirts": [
+      {
+        "name": "Designed for Training Tee",
+        "price": "28",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/67924fbc3a1449cf9ff8d75a15b72b26_9366/designed-for-training-tee.jpg"
+      },
+      {
+        "name": "Train Essentials Minimal Branding Racerback Tank Top",
+        "price": "66",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/78868ee536f4442e83f2bb2cfcf37797_9366/train-essentials-minimal-branding-racerback-tank-top.jpg"
+      },
+      {
+        "name": "Adicolor Trefoil Boxy Tee",
+        "price": "42",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/7aeef7f44e874a3b99b6edb721a7daf0_9366/adicolor-trefoil-boxy-tee.jpg"
+      },
+      {
+        "name": "3-Stripes Tee",
+        "price": "61",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/d2f9c6c5d44e4384aa6c628f4a4aa16f_9366/3-stripes-tee.jpg"
+      },
+      {
+        "name": "Trefoil Regular Tee",
+        "price": "57",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/576f0074cc0442879b30991f45a68bc2_9366/trefoil-regular-tee.jpg"
+      },
+      {
+        "name": "Embroidered Loose Tee",
+        "price": "49",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/98bffb57a07244c0b33fb941f600e6ce_9366/embroidered-loose-tee.jpg"
+      },
+      {
+        "name": "Future Icons Badge of Sport Tee",
+        "price": "29",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/2ca65fc6d50648bc9800ae8c00bfa02b_9366/future-icons-badge-of-sport-tee.jpg"
+      },
+      {
+        "name": "Adicolor Essentials Tee",
+        "price": "72",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/41abfa26d7b24fcaac16d5df259db4c4_9366/adicolor-essentials-tee.jpg"
+      },
+      {
+        "name": "Essentials Loose Logo Tank Top",
+        "price": "72",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/639204ad92d4444385952560f0d3f756_9366/essentials-loose-logo-tank-top.jpg"
+      },
+      {
+        "name": "Designed for Training Tee",
+        "price": "C$ 40",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/67924fbc3a1449cf9ff8d75a15b72b26_9366/designed-for-training-tee.jpg"
+      },
+      {
+        "name": "Train Essentials Minimal Branding Racerback Tank Top",
+        "price": "C$ 35",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/78868ee536f4442e83f2bb2cfcf37797_9366/train-essentials-minimal-branding-racerback-tank-top.jpg"
+      },
+      {
+        "name": "Adicolor Trefoil Boxy Tee",
+        "price": "C$ 50",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/7aeef7f44e874a3b99b6edb721a7daf0_9366/adicolor-trefoil-boxy-tee.jpg"
+      },
+      {
+        "name": "3-Stripes Tee",
+        "price": "C$ 45",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/d2f9c6c5d44e4384aa6c628f4a4aa16f_9366/3-stripes-tee.jpg"
+      },
+      {
+        "name": "Trefoil Regular Tee",
+        "price": "C$ 45",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/576f0074cc0442879b30991f45a68bc2_9366/trefoil-regular-tee.jpg"
+      },
+      {
+        "name": "Embroidered Loose Tee",
+        "price": "C$ 40",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/98bffb57a07244c0b33fb941f600e6ce_9366/embroidered-loose-tee.jpg"
+      },
+      {
+        "name": "Future Icons Badge of Sport Tee",
+        "price": "43",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/2ca65fc6d50648bc9800ae8c00bfa02b_9366/future-icons-badge-of-sport-tee.jpg"
+      },
+      {
+        "name": "Adicolor Essentials Tee",
+        "price": "24",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/41abfa26d7b24fcaac16d5df259db4c4_9366/adicolor-essentials-tee.jpg"
+      },
+      {
+        "name": "Essentials Loose Logo Tank Top",
+        "price": "39",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/639204ad92d4444385952560f0d3f756_9366/essentials-loose-logo-tank-top.jpg"
+      }
+    ],
+    "Pants": [
+      {
+        "name": "Tiro 23 League Pants",
+        "price": "58",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/bf9cb1cf4d5541e984e9aefa00b6e59d_9366/tiro-23-league-pants.jpg"
+      },
+      {
+        "name": "Graphic Print Fleece Pants",
+        "price": "42",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/df1b9ece7ac24cb082900e4ec6e8dd19_9366/graphic-print-fleece-pants.jpg"
+      },
+      {
+        "name": "Trefoil Essentials Pants",
+        "price": "68",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/309ad2325fb647aaa0f5163443ec26da_9366/trefoil-essentials-pants.jpg"
+      },
+      {
+        "name": "AEROREADY Sereno Slim Tapered-Cut 3-Stripes Pants",
+        "price": "46",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/b5a7db7665304173b2cdad1e006ecf9c_9366/aeroready-sereno-slim-tapered-cut-3-stripes-pants.jpg"
+      },
+      {
+        "name": "Tiro 23 League Pants",
+        "price": "55",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/af1f383aa1564629a610aef500bd4dfb_9366/tiro-23-league-pants.jpg"
+      },
+      {
+        "name": "Adicolor Classics Firebird Track Pants",
+        "price": "34",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/835f9c953f5c45498975f108a258f737_9366/adicolor-classics-firebird-track-pants.jpg"
+      },
+      {
+        "name": "Adicolor Graphics Monogram SST Track Pants",
+        "price": "59",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/48f2232e89bc4853b490afd3009fe3d9_9366/adicolor-graphics-monogram-sst-track-pants.jpg"
+      },
+      {
+        "name": "Adicolor 3-Stripes Pants",
+        "price": "53",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/f18733d8fc544362bed6613394d0fd39_9366/adicolor-3-stripes-pants.jpg"
+      },
+      {
+        "name": "Tiro 23 League Pants",
+        "price": "43",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/0357f54369424e5ab2d5aef300cbcd50_9366/tiro-23-league-pants.jpg"
+      },
+      {
+        "name": "Tiro 24 Training Pants",
+        "price": "45",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/717d09f5b271468db7ac9120e8f69306_9366/tiro-24-training-pants.jpg"
+      },
+      {
+        "name": "DailyRun 5-Inch Short Leggings",
+        "price": "C$ 80",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/a52f44018c72462a91c389dabf40bd44_9366/dailyrun-5-inch-short-leggings.jpg"
+      },
+      {
+        "name": "Adizero Lite Short Leggings",
+        "price": "C$ 85",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/4441bb8d64934161b02dc385d2404686_9366/adizero-lite-short-leggings.jpg"
+      },
+      {
+        "name": "Optime 7-Inch Leggings",
+        "price": "C$ 55",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/7ee920e590194f2a938d99162991981a_9366/optime-7-inch-leggings.jpg"
+      },
+      {
+        "name": "Optime 7-Inch Leggings",
+        "price": "C$ 55",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/c31afd249a534da5ad7f08ef4f330c8e_9366/optime-7-inch-leggings.jpg"
+      },
+      {
+        "name": "Optime 7-Inch Leggings",
+        "price": "C$ 55",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/2ec4e2ddf0344410a5e4a45e27342264_9366/optime-7-inch-leggings.jpg"
+      },
+      {
+        "name": "Adizero Control Running Short Leggings",
+        "price": "C$ 150",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/bb8a179c1fea4fb3b48af46bc390dd48_9366/adizero-control-running-short-leggings.jpg"
+      },
+      {
+        "name": "The Padded Cycling Shorts",
+        "price": "59",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/b21d32ebe88c4338b8e7d7691493cae1_9366/the-padded-cycling-shorts.jpg"
+      },
+      {
+        "name": "Ultimate Running Winter Long Leggings",
+        "price": "28",
+        "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/fd22436852b546aa8d69403ed0d3a834_9366/ultimate-running-winter-long-leggings.jpg"
+      }
+    ]
+  }
+}
