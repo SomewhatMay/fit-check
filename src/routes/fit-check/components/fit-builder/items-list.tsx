@@ -3,6 +3,7 @@ import aiStars from "../../../../static/ai-stars.png";
 
 interface props {
   name: string;
+  randomizeOthers: () => void;
   items: {
     id: number;
     imageId: string;
@@ -10,7 +11,7 @@ interface props {
   }[];
 }
 
-export function ItemsList({ name, items }: props) {
+export function ItemsList({ name, randomizeOthers, items }: props) {
   const [selected, setSelected] = useState<(typeof items)[0]>(items[0]);
 
   return (
@@ -32,7 +33,10 @@ export function ItemsList({ name, items }: props) {
             <button
               key={item.id}
               className="inline-block h-full aspect-square relative"
-              onClick={() => setSelected(item)}
+              onClick={() => {
+                setSelected(item);
+                randomizeOthers();
+              }}
             >
               {item.recommended && (
                 <img

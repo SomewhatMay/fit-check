@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { usePants, useShirts } from "../../../../contexts/products-context";
 import aiStars from "../../../../static/ai-stars.png";
 import { ItemsList } from "./items-list";
@@ -8,16 +8,23 @@ export function FitBuilder() {
   const shirts = useShirts();
   const pants = usePants();
 
+  const [shirtsStartIndex, setsShirtsStartIndex] = useState(0);
+  const [pantsStartIndex, setPantsStartIndex] = useState(0);
+
+  const randomizePants = () =>
+    setPantsStartIndex(Math.floor(Math.random() * (shirts.length - 10)));
+  const randomizeShirts = () =>
+    setsShirtsStartIndex(Math.floor(Math.random() * (pants.length - 10)));
+
   useEffect(() => {
     shuffleArray(shirts);
+    randomizeShirts();
   }, [shirts]);
 
   useEffect(() => {
     shuffleArray(pants);
+    randomizePants();
   }, [pants]);
-
-  const shirtsStartIndex = Math.floor(Math.random() * (shirts.length - 10));
-  const pantsStartIndex = Math.floor(Math.random() * (pants.length - 10));
 
   return (
     <div className="mt-[2rem]">
@@ -35,6 +42,7 @@ export function FitBuilder() {
       <div>
         <ItemsList
           name="Shirts"
+          randomizeOthers={randomizePants}
           items={shirts
             .slice(shirtsStartIndex, shirtsStartIndex + 10)
             .map((shirt) => ({
@@ -45,6 +53,7 @@ export function FitBuilder() {
         />
         <ItemsList
           name="Pants"
+          randomizeOthers={randomizeShirts}
           items={pants
             .slice(pantsStartIndex, pantsStartIndex + 10)
             .map((pants) => ({
