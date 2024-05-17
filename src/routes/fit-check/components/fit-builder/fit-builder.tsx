@@ -1,8 +1,5 @@
 import { useEffect } from "react";
-import {
-  usePants,
-  useShirts,
-} from "../../../../components/contexts/products-context";
+import { usePants, useShirts } from "../../../../contexts/products-context";
 import aiStars from "../../../../static/ai-stars.png";
 import { ItemsList } from "./items-list";
 import { shuffleArray } from "../../../../util/shuffle-array";
