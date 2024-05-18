@@ -1,22 +1,39 @@
-import { useMemo } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { CategoryChooser } from "../../components/category-chooser";
 import { ItemsList } from "../../components/items-list";
 import { ProfileCard } from "../../components/profile-card";
-import { useAllProducts } from "../../contexts/products-context";
+import { Product, useAllProducts } from "../../contexts/products-context";
 import { shuffleArray } from "../../util/shuffle-array";
+import { ItemsListScroller } from "../../components/items-list-scroller";
 
 export function Redeem() {
   const allProducts = useAllProducts();
+  const subheadings = [
+    "Redeem now",
+    "Redeem with more purchases",
+    "Trending right now",
+    "You may also like",
+    "Limited Time Offers",
+    "Exclusive Rewards",
+    "Hot Deals",
+    "Special Promotions",
+    "Redeem Your Points",
+    "Available Now",
+    "Act Fast",
+    "Recommended for You",
+    "Top Rewards",
+    "Just Added",
+    "Popular Rewards",
+    "Best Value",
+    "Don't Miss Out",
+    "Earn More, Redeem More",
+    "Limited Stock",
+    "Get It Before It's Gone",
+  ];
 
   useMemo(() => {
     shuffleArray(allProducts);
   }, [allProducts]);
-
-  const randomProductsSlice = () => {
-    const randomIndex = Math.floor(Math.random() * (allProducts.length - 10));
-
-    return allProducts.slice(randomIndex, randomIndex + 10);
-  };
 
   return (
     <>
@@ -25,21 +42,9 @@ export function Redeem() {
         Redeem
       </div>
       <CategoryChooser />
-      <ItemsList
-        name="Redeem now"
-        items={randomProductsSlice()}
-      />
-      <ItemsList
-        name="Redeem with more purchases"
-        items={randomProductsSlice()}
-      />
-      <ItemsList
-        name="You may also like"
-        items={randomProductsSlice()}
-      />
-      <ItemsList
-        name="Popular"
-        items={randomProductsSlice()}
+      <ItemsListScroller
+        subheadings={subheadings}
+        productsList={allProducts}
       />
     </>
   );
