@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 5.5px;
+}
+
 body {
   font-family: "Corben", serif;
   font-weight: 400;

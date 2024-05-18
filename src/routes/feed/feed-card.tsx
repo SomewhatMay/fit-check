@@ -41,7 +41,10 @@ export function FeedCard({ post }: Props) {
     <div
       ref={cardRef}
       className="w-full px-[8rem] mb-[5.5rem] opacity-0 transition-all"
-      style={{ opacity: visible ? 1 : 0, translate: visible ? "0 0" : "50% 0" }}
+      style={{
+        opacity: visible ? 1 : 0,
+        translate: visible ? "0 0" : "-50% 0",
+      }}
     >
       <div className="flex items-center">
         <img
