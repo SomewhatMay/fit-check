@@ -1,4 +1,4 @@
-import { Product } from "../../../../contexts/products-context";
+import { Product } from "../../contexts/products-context";
 import { Card } from "./card";
 
 interface props {

@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { SearchBar } from "../../components/search-bar";
 import { useAllProducts, useShirts } from "../../contexts/products-context";
 import { Carousel } from "./components/carousel";
-import { ItemsList } from "./components/items-list/items-list";
+import { ItemsList } from "../../components/items-list";
 import { shuffleArray } from "../../util/shuffle-array";
 import { CategoryChooser } from "../../components/category-chooser";
 

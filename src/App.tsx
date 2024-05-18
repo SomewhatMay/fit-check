@@ -4,6 +4,7 @@ import { Navbar } from "./components/navbar/navbar";
 import { FitCheck } from "./routes/fit-check";
 import { TopBar } from "./components/topbar";
 import { Discover } from "./routes/discover";
+import { Redeem } from "./routes/redeem";
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
       <TopBar />
       <Navbar />
       <div>
-        <Discover />
+        {/* <Discover /> */}
         {/* <FitCheck /> */}
+        <Redeem />
       </div>
     </>
   );
