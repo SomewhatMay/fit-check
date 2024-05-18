@@ -3,14 +3,46 @@ import likeIcon from "../../static/like-icon.png";
 import commentIcon from "../../static/comment-icon.png";
 import shareIcon from "../../static/share-icon.png";
 import { readableNumber } from "../../util/readable-number";
+import { useEffect, useRef, useState } from "react";
 
-interface props {
+interface Props {
   post: Post;
 }
 
-export function FeedCard({ post }: props) {
+export function FeedCard({ post }: Props) {
+  const [visible, setVisible] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.unobserve(cardRef.current!);
+        }
+      },
+      {
+        threshold: 0.3,
+      }
+    );
+
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+
+    return () => {
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="w-full px-[8rem] mb-[5.5rem]">
+    <div
+      ref={cardRef}
+      className="w-full px-[8rem] mb-[5.5rem] opacity-0 transition-all"
+      style={{ opacity: visible ? 1 : 0, translate: visible ? "0 0" : "50% 0" }}
+    >
       <div className="flex items-center">
         <img
           src={post.profileImageUrl}

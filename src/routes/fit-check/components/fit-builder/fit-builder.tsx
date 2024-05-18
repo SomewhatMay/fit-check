@@ -12,9 +12,9 @@ export function FitBuilder() {
   const [pantsStartIndex, setPantsStartIndex] = useState(0);
 
   const randomizePants = () =>
-    setPantsStartIndex(Math.floor(Math.random() * (shirts.length - 10)));
+    setPantsStartIndex(Math.floor(Math.random() * (pants.length - 10)));
   const randomizeShirts = () =>
-    setsShirtsStartIndex(Math.floor(Math.random() * (pants.length - 10)));
+    setsShirtsStartIndex(Math.floor(Math.random() * (shirts.length - 10)));
 
   useEffect(() => {
     shuffleArray(shirts);
@@ -28,9 +28,9 @@ export function FitBuilder() {
 
   return (
     <div className="mt-[2rem]">
-      <div className="text-black w-full text-center">
+      <div className="w-full text-center text-black">
         <span className="block text-6xl">Build your fit</span>
-        <span className="block text-3xl text-gray-400 mt-4">
+        <span className="block mt-4 text-3xl text-gray-400">
           <img
             src={aiStars}
             alt="ai-generated-content-identifier"
