@@ -11,8 +11,8 @@ function App() {
       <TopBar />
       <Navbar />
       <div>
-        {/* <Discover /> */}
-        <FitCheck />
+        <Discover />
+        {/* <FitCheck /> */}
       </div>
     </>
   );

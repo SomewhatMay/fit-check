@@ -56,6 +56,25 @@ export function usePants() {
   return pants;
 }
 
+export function useAllProducts() {
+  const products = useProducts();
+  const allProducts = useMemo(() => {
+    const temp: Product[] = [];
+
+    for (const brand of Object.values(products)) {
+      for (const category of Object.values(brand)) {
+        for (const product of Object.values(category)) {
+          temp.push(product);
+        }
+      }
+    }
+
+    return temp;
+  }, [products]);
+
+  return allProducts;
+}
+
 export function ProductsProvider({ children }: { children: React.ReactNode }) {
   return (
     <ProductsContext.Provider value={productsJson}>
