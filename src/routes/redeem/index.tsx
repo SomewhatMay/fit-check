@@ -37,6 +37,10 @@ export function Redeem() {
         name="You may also like"
         items={randomProductsSlice()}
       />
+      <ItemsList
+        name="Popular"
+        items={randomProductsSlice()}
+      />
     </>
   );
 }

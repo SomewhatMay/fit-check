@@ -43,12 +43,22 @@ export function Discover() {
 
       <ItemsList
         items={randomShirtsSlice()}
-        name="Most Popular"
+        name="Trending right now"
       />
 
       <ItemsList
         items={randomShirtsSlice()}
         name="New Releases"
+      />
+
+      <ItemsList
+        items={randomShirtsSlice()}
+        name="Try something new"
+      />
+
+      <ItemsList
+        items={randomShirtsSlice()}
+        name="Our favorite"
       />
     </>
   );
