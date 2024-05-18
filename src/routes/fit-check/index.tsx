@@ -1,4 +1,3 @@
-import React from "react";
 import { ProfileCard } from "../../components/profile-card";
 import { RecommendedCarousel } from "./components/recommended-carousel/";
 import { FitBuilder } from "./components/fit-builder";
@@ -9,8 +8,8 @@ export function FitCheck() {
     <>
       <ProfileCard />
       <RecommendedCarousel />
-      <FitBuilder />
       <TryOnButton />
+      <FitBuilder />
     </>
   );
 }

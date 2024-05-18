@@ -21,7 +21,9 @@ export function ListCard({ item, index, setSelected, randomizeOthers }: props) {
 
   useEffect(() => {
     if (!mounted) {
-      setTimeout(() => setMounted(true), 100 * index);
+      const timeoutId = setTimeout(() => setMounted(true), 100 * index);
+
+      return () => clearTimeout(timeoutId);
     }
   }, [index]);
 

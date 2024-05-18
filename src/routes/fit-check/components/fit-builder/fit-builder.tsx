@@ -27,7 +27,7 @@ export function FitBuilder() {
   }, [pants]);
 
   return (
-    <div className="mt-[2rem]">
+    <div className="mt-[3rem]">
       <div className="w-full text-center text-black">
         <span className="block text-6xl">Build your fit</span>
         <span className="block mt-4 text-3xl text-gray-400">

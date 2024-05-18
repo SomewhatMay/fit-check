@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Post, usePosts } from "../../contexts/posts-context";
 import { FeedCard } from "./feed-card";
 
@@ -49,6 +49,17 @@ export function Feed() {
     loadMorePosts();
   }, []);
 
+  const postNodes = useMemo(
+    () =>
+      visiblePosts.map((post, index) => (
+        <FeedCard
+          key={post.username}
+          post={post}
+        />
+      )),
+    [visiblePosts]
+  );
+
   return (
     <>
       <div className="text-7xl w-full px-[2rem] my-[2rem] text-center mt-[2.5rem]">
@@ -56,12 +67,7 @@ export function Feed() {
       </div>
 
       <div className="overflow-y-auto mt-[2rem] overflow-x-clip overscroll-y-contain">
-        {visiblePosts.map((post, index) => (
-          <FeedCard
-            key={post.username}
-            post={post}
-          />
-        ))}
+        {postNodes}
         {/* Sentinel element */}
         <div
           ref={sentinelRef}

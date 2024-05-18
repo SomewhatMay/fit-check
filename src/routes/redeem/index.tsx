@@ -1,8 +1,7 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo } from "react";
 import { CategoryChooser } from "../../components/category-chooser";
-import { ItemsList } from "../../components/items-list";
 import { ProfileCard } from "../../components/profile-card";
-import { Product, useAllProducts } from "../../contexts/products-context";
+import { useAllProducts } from "../../contexts/products-context";
 import { shuffleArray } from "../../util/shuffle-array";
 import { ItemsListScroller } from "../../components/items-list-scroller";
 

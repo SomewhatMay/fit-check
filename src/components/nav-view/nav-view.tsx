@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { NavButton, Navbar } from "../navbar";
 
 interface props {
@@ -9,9 +9,7 @@ interface props {
 }
 
 export function NavView({ children }: props) {
-  const [pageIndex, setPageIndex] = React.useState(
-    Math.floor(children.length / 2)
-  );
+  const [pageIndex, setPageIndex] = useState(Math.floor(children.length / 2));
 
   return (
     <>
@@ -19,7 +17,7 @@ export function NavView({ children }: props) {
         {children.map((child, index) => (
           <div
             key={index}
-            className="overflow-y-scroll min-w-[100vw] transition-all"
+            className="overflow-y-scroll min-w-[100vw] transition-all relative"
             style={{
               transform: `translateX(${-pageIndex * 100}%)`,
             }}
