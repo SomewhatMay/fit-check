@@ -86,7 +86,15 @@ export function ItemsListScroller({ subheadings, productsList }: props) {
   return (
     <div>
       {allItemsLists}
-      <div ref={sentinelRef} />
+      <div
+        ref={sentinelRef}
+        className="h-[4rem]"
+      />
+      {visibleSubheadings.length === subheadings.length && (
+        <div className="text-4xl text-center mt-0 mb-[4rem]">
+          You've reached the end!
+        </div>
+      )}
     </div>
   );
 }

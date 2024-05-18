@@ -7,6 +7,7 @@ export function TopBar() {
       <div className="flex-grow text-5xl">FitCheck</div>
       {[bellIcon, hamburgerIcon].map((icon) => (
         <img
+          key={icon}
           src={icon}
           alt={icon}
           className="h-[3rem] ml-[2rem] aspect-square"

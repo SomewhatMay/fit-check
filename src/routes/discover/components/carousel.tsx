@@ -12,6 +12,7 @@ export function Carousel({ items }: props) {
           const centerBasedIndex = index - 2;
           return (
             <img
+              key={item.id}
               src={item.imageUrl}
               alt={item.name}
               className={`w-[19rem] h-[40rem] object-cover rounded-[2rem] shadow-xl`}

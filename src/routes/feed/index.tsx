@@ -40,6 +40,7 @@ export function Feed() {
         prevPosts.length,
         prevPosts.length + 2
       );
+
       return [...prevPosts, ...remainingPosts];
     });
   };
@@ -62,10 +63,15 @@ export function Feed() {
           />
         ))}
         {/* Sentinel element */}
-        <div ref={sentinelRef} />
+        <div
+          ref={sentinelRef}
+          className="h-[2rem]"
+        />
       </div>
       {visiblePosts.length === posts.length && (
-        <div className="text-4xl text-center">You've reached the end!</div>
+        <div className="text-4xl text-center mt-0 mb-[4rem]">
+          You've reached the end!
+        </div>
       )}
     </>
   );

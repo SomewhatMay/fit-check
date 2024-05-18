@@ -1,12 +1,22 @@
+import { useEffect, useRef, useState } from "react";
 import { Product } from "../../contexts/products-context";
 
 interface props {
   product: Product;
+  index: number;
+  visible: boolean;
 }
 
-export function Card({ product }: props) {
+export function Card({ product, index, visible }: props) {
   return (
-    <div className="w-[19rem]">
+    <div
+      className="w-[91%] transition-all opacity-0 duration-400"
+      style={{
+        opacity: visible ? 1 : 0,
+        translate: visible ? `0 0` : `0 50%`,
+        transitionDelay: `${index * 100}ms`,
+      }}
+    >
       <img
         src={product.imageUrl}
         alt={product.name}

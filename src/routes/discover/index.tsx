@@ -6,7 +6,6 @@ import {
   useShirts,
 } from "../../contexts/products-context";
 import { Carousel } from "./components/carousel";
-import { ItemsList } from "../../components/items-list";
 import { shuffleArray } from "../../util/shuffle-array";
 import { CategoryChooser } from "../../components/category-chooser";
 import { ItemsListScroller } from "../../components/items-list-scroller";
