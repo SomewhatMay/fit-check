@@ -10,7 +10,7 @@ interface props {
 
 export function NavView({ children }: props) {
   const [pageIndex, setPageIndex] = React.useState(
-    1 // Math.floor(children.length / 2)
+    Math.floor(children.length / 2)
   );
 
   return (
