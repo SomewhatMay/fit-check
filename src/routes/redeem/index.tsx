@@ -34,7 +34,7 @@ export function Redeem() {
         items={randomProductsSlice()}
       />
       <ItemsList
-        name="Editor's choice"
+        name="You may also like"
         items={randomProductsSlice()}
       />
     </>

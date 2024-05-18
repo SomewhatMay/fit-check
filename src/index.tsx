@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ProductsProvider } from "./contexts/products-context";
+import { PostsProvider } from "./contexts/posts-context";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -11,7 +12,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ProductsProvider>
-      <App />
+      <PostsProvider>
+        <App />
+      </PostsProvider>
     </ProductsProvider>
   </React.StrictMode>
 );

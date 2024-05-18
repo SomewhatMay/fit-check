@@ -1,0 +1,103 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "username": "mrbeast",
+      "profileImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+      "postThumbnailUrl": "https://i.pinimg.com/736x/ca/62/d2/ca62d2664d178c0760a2d3895e33484e.jpg",
+      "likeCount": 82734,
+      "caption": "Glad to have Nike. Most comfortable clothes I've ever had. Get some MrBeast Nike merch for 30% off!! #nike #fitcheck",
+      "commentCount": 8374
+    },
+    {
+      "id": 1,
+      "username": "fashionista123",
+      "profileImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+      "postThumbnailUrl": "https://i.pinimg.com/736x/ca/62/d2/ca62d2664d178c0760a2d3895e33484e.jpg",
+      "likeCount": 34521,
+      "caption": "Loving this new summer dress from Zara! So light and breezy. #summerstyle #zara",
+      "commentCount": 654
+    },
+    {
+      "id": 2,
+      "username": "styleguru",
+      "profileImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+      "postThumbnailUrl": "https://i.pinimg.com/736x/ca/62/d2/ca62d2664d178c0760a2d3895e33484e.jpg",
+      "likeCount": 12987,
+      "caption": "New kicks from Adidas. Perfect for my morning run! #adidas #running",
+      "commentCount": 234
+    },
+    {
+      "id": 3,
+      "username": "trendyjen",
+      "profileImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+      "postThumbnailUrl": "https://i.pinimg.com/736x/ca/62/d2/ca62d2664d178c0760a2d3895e33484e.jpg",
+      "likeCount": 47893,
+      "caption": "My new favorite jeans from Levi's. Super comfy and stylish. #levis #denim",
+      "commentCount": 892
+    },
+    {
+      "id": 4,
+      "username": "casualchic",
+      "profileImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+      "postThumbnailUrl": "https://i.pinimg.com/736x/ca/62/d2/ca62d2664d178c0760a2d3895e33484e.jpg",
+      "likeCount": 5642,
+      "caption": "This H&M sweater is my go-to for chilly days. Cozy vibes! #hm #sweaterweather",
+      "commentCount": 310
+    },
+    {
+      "id": 5,
+      "username": "urbanfashion",
+      "profileImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+      "postThumbnailUrl": "https://i.pinimg.com/736x/ca/62/d2/ca62d2664d178c0760a2d3895e33484e.jpg",
+      "likeCount": 8735,
+      "caption": "Streetwear essentials from Supreme. Always in style. #supreme #streetwear",
+      "commentCount": 452
+    },
+    {
+      "id": 6,
+      "username": "fitnessfit",
+      "profileImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+      "postThumbnailUrl": "https://i.pinimg.com/736x/ca/62/d2/ca62d2664d178c0760a2d3895e33484e.jpg",
+      "likeCount": 29238,
+      "caption": "Rocking my new gym gear from Under Armour. Feels great during workouts. #underarmour #gymwear",
+      "commentCount": 675
+    },
+    {
+      "id": 7,
+      "username": "luxelover",
+      "profileImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+      "postThumbnailUrl": "https://i.pinimg.com/736x/ca/62/d2/ca62d2664d178c0760a2d3895e33484e.jpg",
+      "likeCount": 17834,
+      "caption": "Chic and elegant dress from Chanel. Perfect for the evening. #chanel #luxury",
+      "commentCount": 239
+    },
+    {
+      "id": 8,
+      "username": "beachbabe",
+      "profileImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+      "postThumbnailUrl": "https://i.pinimg.com/736x/ca/62/d2/ca62d2664d178c0760a2d3895e33484e.jpg",
+      "likeCount": 21356,
+      "caption": "Beach ready with my new swimsuit from Victoria's Secret. Loving the fit! #victoriassecret #beachday",
+      "commentCount": 478
+    },
+    {
+      "id": 9,
+      "username": "winterwarrior",
+      "profileImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+      "postThumbnailUrl": "https://i.pinimg.com/736x/ca/62/d2/ca62d2664d178c0760a2d3895e33484e.jpg",
+      "likeCount": 15432,
+      "caption": "Staying warm in my new North Face jacket. Ready for winter adventures. #thenorthface #wintergear",
+      "commentCount": 312
+    },
+    {
+      "id": 10,
+      "username": "minimalist",
+      "profileImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+      "postThumbnailUrl": "https://i.pinimg.com/736x/ca/62/d2/ca62d2664d178c0760a2d3895e33484e.jpg",
+      "likeCount": 8345,
+      "caption": "This basic tee from Uniqlo is a wardrobe staple. Simple and versatile. #uniqlo #minimalist",
+      "commentCount": 156
+    }
+  ]
+}
