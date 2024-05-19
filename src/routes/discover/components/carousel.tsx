@@ -10,6 +10,7 @@ export function Carousel({ items }: props) {
       <div className="h-[48rem] w-[120%] relative left-[-10%] bg-gray-300 flex justify-center py-[2rem] mt-[2rem]">
         {items.map((item, index) => {
           const centerBasedIndex = index - 2;
+          const brightness = 100 - Math.abs(centerBasedIndex) * 10;
           return (
             <img
               key={item.id}
@@ -21,7 +22,8 @@ export function Carousel({ items }: props) {
                   (2 - Math.abs(centerBasedIndex)) * 1.75
                 }rem) translateX(${-centerBasedIndex * 1.75}rem)`,
                 zIndex: 2 - Math.abs(centerBasedIndex) + 5,
-                // filter: `brightness(${100 - Math.abs(centerBasedIndex) * 10}%)`,
+                filter: `brightness(${brightness}%)`,
+                WebkitFilter: `brightness(${brightness}%)`,
               }}
             />
           );

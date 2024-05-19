@@ -19,7 +19,7 @@ export function CarouselCard({ index, fitName }: props) {
     case 1:
       extraStyles =
         "translate-x-[0rem] h-[50rem] w-[25rem] translate-y-[5rem] z-10";
-      textStyle = "text-[4rem] font-bold";
+      textStyle = "text-[3rem] font-bold";
       bgStyle = "bg-gray-200";
       break;
     case 2:

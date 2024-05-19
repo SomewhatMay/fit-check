@@ -10,7 +10,6 @@ interface props {
 
 export function NavView({ children }: props) {
   const pageIndex = usePageIndex();
-  const setPageIndex = useSetPageIndex();
 
   return (
     <>
