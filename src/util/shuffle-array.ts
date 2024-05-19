@@ -13,4 +13,6 @@ export function shuffleArray(array: any[]) {
       array[currentIndex],
     ];
   }
+
+  return array;
 }

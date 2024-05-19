@@ -34,7 +34,7 @@ export function ItemsList({ name, items, priceFormatter }: props) {
         observer.unobserve(cardRef.current);
       }
     };
-  }, []);
+  }, [cardRef, items]);
 
   return (
     <div className="w-full px-[2rem] pt-[1rem]">
@@ -44,10 +44,7 @@ export function ItemsList({ name, items, priceFormatter }: props) {
       >
         {name}
       </div>
-      <div
-        ref={cardRef}
-        className="translate-y-[10rem]"
-      ></div>
+      <div ref={cardRef} className="translate-y-[10rem]"></div>
       <div className="grid grid-flow-col auto-cols-[20rem] gap-[0rem] w-full overflow-x-auto overscroll-x-contain overflow-y-clip">
         {items.map((item, index) => (
           <Card

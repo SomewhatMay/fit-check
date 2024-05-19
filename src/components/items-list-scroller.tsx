@@ -3,6 +3,8 @@ import { Product } from "../contexts/products-context";
 import { shuffleArray } from "../util/shuffle-array";
 import { ItemsList } from "./items-list";
 import { usePageIndex } from "../contexts/page-index-context";
+import { useSelectedBrand } from "../contexts/selected-brand-context";
+import { usePrevious } from "@uidotdev/usehooks";
 
 interface props {
   subheadings: string[];
@@ -21,12 +23,15 @@ export function ItemsListScroller({
   const [visibleSubheadings, setVisibleSubheadings] = useState<string[]>([]);
   const sentinelRef = useRef<HTMLDivElement>(null);
   const currentPageIndex = usePageIndex();
+  const selectedBrand = useSelectedBrand();
+  const previousSelectedBrand = usePrevious(selectedBrand);
 
   useEffect(() => {
+    let timeoutId: ReturnType<typeof setTimeout> | undefined;
     const handleObserver = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          loadMoreSubheadings();
+          timeoutId = loadMoreSubheadings();
         }
       });
     };
@@ -47,6 +52,10 @@ export function ItemsListScroller({
       if (sentinel) {
         observer.unobserve(sentinel);
       }
+
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
     };
   }, [sentinelRef]);
 
@@ -54,10 +63,14 @@ export function ItemsListScroller({
     let timeoutId: ReturnType<typeof setTimeout> | undefined;
     if (currentPageIndex !== pageIndex) {
       startTransition(() => {
-        setTimeout(() => setVisibleSubheadings([]), 300);
+        timeoutId = setTimeout(() => setVisibleSubheadings([]), 300);
       });
     } else {
-      loadMoreSubheadings();
+      if (previousSelectedBrand !== selectedBrand) {
+        startTransition(() => setVisibleSubheadings([]));
+      }
+
+      timeoutId = loadMoreSubheadings();
     }
 
     return () => {
@@ -65,18 +78,26 @@ export function ItemsListScroller({
         clearTimeout(timeoutId);
       }
     };
-  }, [currentPageIndex]);
+  }, [productsList, currentPageIndex, selectedBrand]);
 
   const loadMoreSubheadings = () => {
-    startTransition(() =>
-      setVisibleSubheadings((prev) => {
-        const remainingSubheadings = subheadings.slice(
-          prev.length,
-          prev.length + 2
-        );
-        return [...prev, ...remainingSubheadings];
-      })
-    );
+    let timeoutId: ReturnType<typeof setTimeout> | undefined = undefined;
+
+    startTransition(() => {
+      timeoutId = setTimeout(
+        () =>
+          setVisibleSubheadings((prev) => {
+            const remainingSubheadings = subheadings.slice(
+              prev.length,
+              prev.length + 2
+            );
+            return [...prev, ...remainingSubheadings];
+          }),
+        150
+      );
+    });
+
+    return timeoutId;
   };
 
   const getRandomProductsSlice = () => {
@@ -106,16 +127,13 @@ export function ItemsListScroller({
           />
         );
       }),
-    [visibleSubheadings]
+    [visibleSubheadings, productsList]
   );
 
   return (
     <div>
       {allItemsLists}
-      <div
-        ref={sentinelRef}
-        className="h-[4rem]"
-      />
+      <div ref={sentinelRef} className="h-[4rem]" />
       {visibleSubheadings.length === subheadings.length ? (
         <div className="text-4xl text-center mt-0 mb-[4rem]">
           You've reached the end!

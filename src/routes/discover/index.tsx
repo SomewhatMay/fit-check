@@ -5,10 +5,13 @@ import { Carousel } from "./components/carousel";
 import { shuffleArray } from "../../util/shuffle-array";
 import { CategoryChooser } from "../../components/category-chooser";
 import { ItemsListScroller } from "../../components/items-list-scroller";
+import { BrandChooser } from "./components/brand-chooser";
+import { useSelectedBrand } from "../../contexts/selected-brand-context";
 
 export function Discover() {
   const products = useAllProducts();
   const allProducts = useAllProducts();
+  const selectedBrand = useSelectedBrand();
   const subheadings = [
     "Similar to your style",
     "Trending right now",
@@ -37,13 +40,13 @@ export function Discover() {
     "Don't Miss Out",
   ];
 
-  useMemo(() => {
-    shuffleArray(allProducts);
-  }, [allProducts]);
+  const shuffledProducts = useMemo(
+    () => shuffleArray([...allProducts]),
+    [allProducts, selectedBrand]
+  );
 
   return (
     <>
-      {/* Make this stick to the top! */}
       <div className="sticky t-0">
         <SearchBar />
         {/* Title */}
@@ -57,10 +60,15 @@ export function Discover() {
 
       <Carousel items={products.slice(0, 5)} />
 
+      <BrandChooser />
+
       <ItemsListScroller
         pageIndex={1}
         subheadings={subheadings}
-        productsList={allProducts}
+        productsList={(() => {
+          console.log("First item is " + shuffledProducts[0].name);
+          return shuffledProducts;
+        })()}
         priceFormatter={(price) => `$${price}`}
       />
     </>
