@@ -6,29 +6,34 @@ import { Redeem } from "./routes/redeem";
 import { Feed } from "./routes/feed";
 import { NavView } from "./components/nav-view";
 import logo from "./logo.svg";
+import feedIcon from "./static/feed-icon.png";
+import discoverIcon from "./static/discover-icon.png";
+import cameraIcon from "./static/camera-icon.png";
+import redeemIcon from "./static/redeem-icon.png";
+import settingsIcon from "./static/setting-icon.png";
 import { useMemo } from "react";
 
 function App() {
   const pages = useMemo(
     () => [
       {
-        icon: logo,
+        icon: feedIcon,
         node: <Feed />,
       },
       {
-        icon: logo,
+        icon: discoverIcon,
         node: <Discover />,
       },
       {
-        icon: logo,
+        icon: cameraIcon,
         node: <FitCheck />,
       },
       {
-        icon: logo,
+        icon: redeemIcon,
         node: <Redeem />,
       },
       {
-        icon: logo,
+        icon: settingsIcon,
         node: (
           <div className="font-bold text-center text-8xl">
             Settings Page Under Development

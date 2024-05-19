@@ -27,7 +27,7 @@ export function useSetPageIndex() {
 }
 
 export function PageIndexProvider({ children }: { children: React.ReactNode }) {
-  const [pageIndex, setPageIndex] = useState(0);
+  const [pageIndex, setPageIndex] = useState(1);
   return (
     <PageContext.Provider value={[pageIndex, setPageIndex]}>
       {children}

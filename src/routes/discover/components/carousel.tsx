@@ -20,8 +20,8 @@ export function Carousel({ items }: props) {
                 transform: `translateY(${
                   (2 - Math.abs(centerBasedIndex)) * 1.75
                 }rem) translateX(${-centerBasedIndex * 1.75}rem)`,
-                zIndex: 2 - Math.abs(centerBasedIndex),
-                filter: `brightness(${100 - Math.abs(centerBasedIndex) * 5}%)`,
+                zIndex: 2 - Math.abs(centerBasedIndex) + 5,
+                filter: `brightness(${100 - Math.abs(centerBasedIndex) * 10}%)`,
               }}
             />
           );
