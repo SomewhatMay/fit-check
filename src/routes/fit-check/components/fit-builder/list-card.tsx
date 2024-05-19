@@ -36,7 +36,7 @@ export function ListCard({ item, index, setSelected, randomizeOthers }: props) {
   return (
     <button
       key={item.id}
-      className="relative inline-block h-full pt-[1rem] transition-all duration-400"
+      className="relative inline-block h-[12rem] aspect-square pt-[1rem] transition-all duration-400"
       style={{
         opacity: mounted ? 1 : 0,
         translate: mounted ? "0 0" : "0 50%",
@@ -58,7 +58,7 @@ export function ListCard({ item, index, setSelected, randomizeOthers }: props) {
         />
       )}
       {!imageLoaded ? (
-        <div className="w-full h-full bg-gray-500 animate-pulse">
+        <div className="w-full bg-gray-500 animate-pulse">
           Image is loading!
         </div>
       ) : (

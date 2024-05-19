@@ -36,7 +36,7 @@ export function ItemsList({ name, randomizeOthers, items }: props) {
         </div>
         <div
           ref={scrollDivRef}
-          className="inline-grid grid-flow-col auto-cols-[21%] ml-[2rem] w-[75%] gap-[1.5rem] overflow-x-auto pb-[3rem] overflow-y-visible overscroll-y-contain overscroll-x-contain"
+          className="inline-grid grid-flow-col auto-cols-[21%] ml-[2rem] w-[75%] gap-[2rem] overflow-x-auto pb-[3rem] overflow-y-visible overscroll-y-contain overscroll-x-contain"
         >
           {items.map((item, index) => (
             <ListCard
