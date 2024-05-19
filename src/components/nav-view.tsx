@@ -14,7 +14,7 @@ export function NavView({ children }: props) {
 
   return (
     <>
-      <div className="pt-[8rem] w-[100vw] max-h-[100vh] flex overflow-y-clip overscroll-y-contain overflow-x-clip">
+      <div className="pt-[8rem] w-[100vw] flex overflow-y-clip overscroll-y-contain overflow-x-clip">
         {children.map((child, index) => {
           return (
             <div
