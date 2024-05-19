@@ -81,7 +81,7 @@ export function Feed() {
 
   return (
     <>
-      <div className="text-7xl w-full px-[2rem] my-[2rem] text-center mt-[2.5rem]">
+      <div className="text-7xl w-full px-[2rem] my-[2rem] text-center mt-[3.5rem]">
         Feed
       </div>
 
