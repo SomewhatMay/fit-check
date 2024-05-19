@@ -1,5 +1,9 @@
-import { NavButton, Navbar } from "./navbar";
-import { usePageIndex, useSetPageIndex } from "../contexts/page-index-context";
+import { NavButton, Navbar } from "../navbar";
+import {
+  usePageIndex,
+  useSetPageIndex,
+} from "../../contexts/page-index-context";
+import { NavViewPage } from "./nav-view-page";
 
 interface props {
   children: {
@@ -9,22 +13,16 @@ interface props {
 }
 
 export function NavView({ children }: props) {
-  const pageIndex = usePageIndex();
-
   return (
     <>
       <div className="pt-[8rem] w-[100vw] flex overflow-y-clip overscroll-y-contain overflow-x-clip">
         {children.map((child, index) => {
           return (
-            <div
+            <NavViewPage
+              childNode={child.node}
               key={index}
-              className="overflow-y-scroll min-w-[100vw] transition-all relative"
-              style={{
-                transform: `translateX(${-pageIndex * 100}%)`,
-              }}
-            >
-              {child.node}
-            </div>
+              pageIndex={index}
+            />
           );
         })}
       </div>

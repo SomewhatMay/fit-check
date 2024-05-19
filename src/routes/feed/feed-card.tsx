@@ -22,7 +22,7 @@ export function FeedCard({ post }: Props) {
         }
       },
       {
-        threshold: 0.2,
+        threshold: 0.1,
       }
     );
 
@@ -40,7 +40,7 @@ export function FeedCard({ post }: Props) {
   return (
     <div
       ref={cardRef}
-      className="w-full px-[8rem] mb-[5.5rem] opacity-0 transition-all"
+      className="w-full px-[4rem] mb-[5.5rem] opacity-0 transition-all"
       style={{
         opacity: visible ? 1 : 0,
         translate: visible ? "0 0" : "-50% 0",
@@ -48,18 +48,16 @@ export function FeedCard({ post }: Props) {
     >
       <div className="flex items-center">
         <img
-          src={post.profileImageUrl}
+          src={post.postThumbnailUrl}
           alt={post.username}
-          className="w-[6rem] rounded-full h-[6rem] aspect-square object-cover inline"
+          className="rounded-full h-[5rem] ml-[1rem] aspect-square object-cover inline"
         />
-        <span className="text-5xl ml-[2rem] translate-y-[-0.5rem]">
-          {post.username}
-        </span>
+        <span className="text-4xl ml-[2rem]">{post.username}</span>
       </div>
       <img
         src={post.postThumbnailUrl}
         alt={post.username}
-        className="w-full object-cover aspect-video mt-[1.75rem] rounded-[2rem] bg-black"
+        className="w-full object-cover object-top aspect-square mt-[1.75rem] rounded-[2rem] bg-black"
       />
       <div className="px-[2rem]">
         <div className="mt-[1.5rem] flex gap-[3rem] items-center">

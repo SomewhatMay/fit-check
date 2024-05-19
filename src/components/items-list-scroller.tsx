@@ -113,9 +113,13 @@ export function ItemsListScroller({
         ref={sentinelRef}
         className="h-[4rem]"
       />
-      {visibleSubheadings.length === subheadings.length && (
+      {visibleSubheadings.length === subheadings.length ? (
         <div className="text-4xl text-center mt-0 mb-[4rem]">
           You've reached the end!
+        </div>
+      ) : (
+        <div className="h-[10rem] w-full text-gray-400 text-3xl text-center mt-0 mb-[4rem]">
+          Loading more...
         </div>
       )}
     </div>

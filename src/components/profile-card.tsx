@@ -1,5 +1,4 @@
-import React from "react";
-import logo from "../logo.svg";
+import { profileIcon } from "../imageUrls";
 
 export function ProfileCard() {
   return (
@@ -7,9 +6,9 @@ export function ProfileCard() {
       <div className="inline-flex items-center">
         <div className="bg-gray-400 rounded-full h-[13rem] mr-[2rem] aspect-square">
           <img
-            src={logo}
+            src={profileIcon}
             alt="avatar"
-            className="inline-block w-full h-full"
+            className="inline-block object-cover w-full h-full rounded-full"
           />
         </div>
         <div className="inline-block my-auto">

@@ -36,9 +36,9 @@ export function ItemsList({ name, items }: props) {
   }, []);
 
   return (
-    <div className="w-full px-[2rem]">
+    <div className="w-full px-[2rem] pt-[1rem]">
       <div
-        className="text-4xl my-[2rem] transition-opacity opacity-0"
+        className="text-4xl my-[2rem] font-bold transition-opacity opacity-0"
         style={{ opacity: visible ? 1 : 0 }}
       >
         {name}

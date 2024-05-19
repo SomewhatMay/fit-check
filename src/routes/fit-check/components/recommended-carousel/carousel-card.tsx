@@ -1,4 +1,4 @@
-import logo from "../../../../logo.svg";
+import { carouselImages } from "../../../../imageUrls";
 
 interface props {
   index: number;
@@ -14,18 +14,18 @@ export function CarouselCard({ index, fitName }: props) {
     case 0:
       extraStyles = "translate-x-[2rem] h-[45rem] w-[20rem]";
       textStyle = "text-[2.5rem]";
-      bgStyle = "bg-gray-300";
+      bgStyle = "bg-gray-300 translate";
       break;
     case 1:
       extraStyles =
         "translate-x-[0rem] h-[50rem] w-[25rem] translate-y-[5rem] z-10";
       textStyle = "text-[3rem] font-bold";
-      bgStyle = "bg-gray-200";
+      bgStyle = "bg-gray-200 translate";
       break;
     case 2:
       extraStyles = "translate-x-[-2rem] h-[45rem] w-[20rem]";
       textStyle = "text-[2.5rem]";
-      bgStyle = "bg-gray-300";
+      bgStyle = "bg-gray-300 translate";
       break;
   }
 
@@ -35,9 +35,9 @@ export function CarouselCard({ index, fitName }: props) {
         {fitName}
       </span>
       <img
-        src={logo}
+        src={carouselImages[index]}
         alt="fitImage"
-        className={`rounded-[2rem] p-4 block w-full h-full object-cover ${bgStyle}`}
+        className={`shadow-md rounded-[2rem] px-4 block w-full h-full object-contain object-[0_1rem] ${bgStyle}`}
       />
     </div>
   );

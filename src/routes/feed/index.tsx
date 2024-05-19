@@ -87,7 +87,7 @@ export function Feed() {
         Feed
       </div>
 
-      <div className="overflow-y-auto mt-[2rem] overflow-x-clip overscroll-y-contain">
+      <div className="overflow-y-auto mt-[3rem] overflow-x-clip overscroll-y-contain">
         {postNodes}
         {/* Sentinel element */}
         <div
@@ -95,9 +95,13 @@ export function Feed() {
           className="h-[2rem]"
         />
       </div>
-      {visiblePosts.length === posts.length && (
+      {visiblePosts.length === posts.length ? (
         <div className="text-4xl text-center mt-0 mb-[4rem]">
           You've reached the end!
+        </div>
+      ) : (
+        <div className="h-[10rem] w-full text-gray-400 text-3xl text-center mt-0 mb-[4rem]">
+          Loading more...
         </div>
       )}
     </>

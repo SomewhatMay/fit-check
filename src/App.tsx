@@ -4,7 +4,7 @@ import { TopBar } from "./components/topbar";
 import { Discover } from "./routes/discover";
 import { Redeem } from "./routes/redeem";
 import { Feed } from "./routes/feed";
-import { NavView } from "./components/nav-view";
+import { NavView } from "./components/nav-view/nav-view";
 import feedIcon from "./static/feed-icon.png";
 import discoverIcon from "./static/discover-icon.png";
 import cameraIcon from "./static/camera-icon.png";
@@ -12,7 +12,7 @@ import redeemIcon from "./static/redeem-icon.png";
 import settingsIcon from "./static/setting-icon.png";
 import { useMemo } from "react";
 
-const version = "1.3.1";
+const version = "1.3.3";
 
 function App() {
   const pages = useMemo(
