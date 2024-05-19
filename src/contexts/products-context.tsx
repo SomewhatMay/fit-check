@@ -56,6 +56,23 @@ export function usePants() {
   return pants;
 }
 
+export function useShoes() {
+  const products = useProducts();
+  const shoes = useMemo(() => {
+    const temp: Product[] = [];
+
+    for (const brand of Object.values(products)) {
+      for (const product of Object.values(brand["Shoes"])) {
+        temp.push(product);
+      }
+    }
+
+    return temp;
+  }, [products]);
+
+  return shoes;
+}
+
 export function useAllProducts() {
   const products = useProducts();
   const allProducts = useMemo(() => {

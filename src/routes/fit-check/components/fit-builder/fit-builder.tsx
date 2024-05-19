@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
-import { usePants, useShirts } from "../../../../contexts/products-context";
+import {
+  usePants,
+  useShirts,
+  useShoes,
+} from "../../../../contexts/products-context";
 import aiStars from "../../../../static/ai-stars.png";
 import { ItemsList } from "./items-list";
 import { shuffleArray } from "../../../../util/shuffle-array";
@@ -7,14 +11,18 @@ import { shuffleArray } from "../../../../util/shuffle-array";
 export function FitBuilder() {
   const shirts = useShirts();
   const pants = usePants();
+  const shoes = useShoes();
 
   const [shirtsStartIndex, setsShirtsStartIndex] = useState(0);
   const [pantsStartIndex, setPantsStartIndex] = useState(0);
+  const [shoesStartIndex, setShoesStartIndex] = useState(0);
 
   const randomizePants = () =>
     setPantsStartIndex(Math.floor(Math.random() * (pants.length - 10)));
   const randomizeShirts = () =>
     setsShirtsStartIndex(Math.floor(Math.random() * (shirts.length - 10)));
+  const randomizeShoes = () =>
+    setShoesStartIndex(Math.floor(Math.random() * (shoes.length - 10)));
 
   useEffect(() => {
     shuffleArray(shirts);
@@ -25,6 +33,11 @@ export function FitBuilder() {
     shuffleArray(pants);
     randomizePants();
   }, [pants]);
+
+  useEffect(() => {
+    shuffleArray(shoes);
+    randomizeShoes();
+  }, [shoes]);
 
   return (
     <div className="mt-[3rem]">
@@ -42,7 +55,10 @@ export function FitBuilder() {
       <div>
         <ItemsList
           name="Shirts"
-          randomizeOthers={randomizePants}
+          randomizeOthers={() => {
+            randomizePants();
+            randomizeShoes();
+          }}
           items={shirts
             .slice(shirtsStartIndex, shirtsStartIndex + 10)
             .map((shirt) => ({
@@ -53,13 +69,30 @@ export function FitBuilder() {
         />
         <ItemsList
           name="Pants"
-          randomizeOthers={randomizeShirts}
+          randomizeOthers={() => {
+            randomizeShirts();
+            randomizeShoes();
+          }}
           items={pants
             .slice(pantsStartIndex, pantsStartIndex + 10)
             .map((pants) => ({
               id: pants.id,
               imageId: pants.imageUrl,
               recommended: Math.random() > 0.5,
+            }))}
+        />
+        <ItemsList
+          name="Shoes"
+          randomizeOthers={() => {
+            randomizeShirts();
+            randomizePants();
+          }}
+          items={shoes
+            .slice(shoesStartIndex, shoesStartIndex + 10)
+            .map((shoe) => ({
+              id: shoe.id,
+              imageId: shoe.imageUrl,
+              recommended: Math.random() > 0.3,
             }))}
         />
       </div>

@@ -12,7 +12,7 @@ import redeemIcon from "./static/redeem-icon.png";
 import settingsIcon from "./static/setting-icon.png";
 import { useMemo } from "react";
 
-const version = "1.3.3";
+const version = "1.3.4";
 
 function App() {
   const pages = useMemo(

@@ -1,10 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { SearchBar } from "../../components/search-bar";
-import {
-  Product,
-  useAllProducts,
-  useShirts,
-} from "../../contexts/products-context";
+import { useAllProducts } from "../../contexts/products-context";
 import { Carousel } from "./components/carousel";
 import { shuffleArray } from "../../util/shuffle-array";
 import { CategoryChooser } from "../../components/category-chooser";
@@ -12,7 +8,7 @@ import { ItemsListScroller } from "../../components/items-list-scroller";
 
 export function Discover() {
   const products = useAllProducts();
-  const shirts = useShirts();
+  const allProducts = useAllProducts();
   const subheadings = [
     "Similar to your style",
     "Trending right now",
@@ -42,8 +38,8 @@ export function Discover() {
   ];
 
   useMemo(() => {
-    shuffleArray(shirts);
-  }, [shirts]);
+    shuffleArray(allProducts);
+  }, [allProducts]);
 
   return (
     <>
@@ -64,7 +60,7 @@ export function Discover() {
       <ItemsListScroller
         pageIndex={1}
         subheadings={subheadings}
-        productsList={shirts}
+        productsList={allProducts}
         priceFormatter={(price) => `$${price}`}
       />
     </>
