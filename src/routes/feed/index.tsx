@@ -39,14 +39,16 @@ export function Feed() {
   }, [sentinelRef]);
 
   const loadMorePosts = () => {
-    setVisiblePosts((prevPosts) => {
-      const remainingPosts = posts.slice(
-        prevPosts.length,
-        prevPosts.length + 2
-      );
+    startTransition(() =>
+      setVisiblePosts((prevPosts) => {
+        const remainingPosts = posts.slice(
+          prevPosts.length,
+          prevPosts.length + 2
+        );
 
-      return [...prevPosts, ...remainingPosts];
-    });
+        return [...prevPosts, ...remainingPosts];
+      })
+    );
   };
 
   useEffect(() => {

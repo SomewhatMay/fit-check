@@ -66,13 +66,15 @@ export function ItemsListScroller({
   }, [currentPageIndex]);
 
   const loadMoreSubheadings = () => {
-    setVisibleSubheadings((prev) => {
-      const remainingSubheadings = subheadings.slice(
-        prev.length,
-        prev.length + 2
-      );
-      return [...prev, ...remainingSubheadings];
-    });
+    startTransition(() =>
+      setVisibleSubheadings((prev) => {
+        const remainingSubheadings = subheadings.slice(
+          prev.length,
+          prev.length + 2
+        );
+        return [...prev, ...remainingSubheadings];
+      })
+    );
   };
 
   const getRandomProductsSlice = () => {

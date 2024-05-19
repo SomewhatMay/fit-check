@@ -45,10 +45,10 @@ function App() {
   );
 
   return (
-    <>
+    <div className="pb-[11.5rem]">
       <TopBar />
       <NavView children={pages} />
-    </>
+    </div>
   );
 }
 
