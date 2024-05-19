@@ -8,12 +8,14 @@ interface props {
   subheadings: string[];
   productsList: Product[];
   pageIndex: number;
+  priceFormatter: (price: number) => string;
 }
 
 export function ItemsListScroller({
   subheadings,
   productsList,
   pageIndex,
+  priceFormatter,
 }: props) {
   const [, startTransition] = useTransition();
   const [visibleSubheadings, setVisibleSubheadings] = useState<string[]>([]);
@@ -100,6 +102,7 @@ export function ItemsListScroller({
             key={name}
             name={name}
             items={randomProductsSlice}
+            priceFormatter={priceFormatter}
           />
         );
       }),

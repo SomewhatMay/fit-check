@@ -65,6 +65,7 @@ export function Discover() {
         pageIndex={1}
         subheadings={subheadings}
         productsList={shirts}
+        priceFormatter={(price) => `$${price}`}
       />
     </>
   );

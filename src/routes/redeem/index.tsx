@@ -45,6 +45,7 @@ export function Redeem() {
         pageIndex={3}
         subheadings={subheadings}
         productsList={allProducts}
+        priceFormatter={(price) => `${price} Points`}
       />
     </>
   );

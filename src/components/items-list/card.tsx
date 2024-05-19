@@ -5,12 +5,13 @@ interface props {
   product: Product;
   index: number;
   visible: boolean;
+  priceFormatter: (price: number) => string;
 }
 
-export function Card({ product, index, visible }: props) {
+export function Card({ product, index, visible, priceFormatter }: props) {
   return (
     <div
-      className="w-[91%] transition-all opacity-0 duration-400"
+      className="w-[91%] transition-all opacity-0 duration-400 pb-[1rem]"
       style={{
         opacity: visible ? 1 : 0,
         translate: visible ? `0 0` : `0 50%`,
@@ -23,7 +24,7 @@ export function Card({ product, index, visible }: props) {
         className="w-full object-cover aspect-square rounded-[2rem]"
       />
       <div className="text-3xl">{product.name}</div>
-      <div className="text-2xl">${product.price}</div>
+      <div className="text-2xl">{priceFormatter(product.price)}</div>
     </div>
   );
 }

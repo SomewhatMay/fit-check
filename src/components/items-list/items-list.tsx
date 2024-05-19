@@ -5,9 +5,10 @@ import { Card } from "./card";
 interface props {
   name: string;
   items: Product[];
+  priceFormatter: (price: number) => string;
 }
 
-export function ItemsList({ name, items }: props) {
+export function ItemsList({ name, items, priceFormatter }: props) {
   const [visible, setVisible] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -54,6 +55,7 @@ export function ItemsList({ name, items }: props) {
             product={item}
             visible={visible}
             index={index}
+            priceFormatter={priceFormatter}
           />
         ))}
       </div>
