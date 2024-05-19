@@ -1,11 +1,15 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import { Post, usePosts } from "../../contexts/posts-context";
 import { FeedCard } from "./feed-card";
+import { usePageIndex } from "../../contexts/page-index-context";
 
 export function Feed() {
+  const [, startTransition] = useTransition();
+  const feedPageIndex = 0;
   const posts = usePosts();
   const [visiblePosts, setVisiblePosts] = useState<Post[]>([]);
   const sentinelRef = useRef<HTMLDivElement>(null);
+  const currentPageIndex = usePageIndex();
 
   useEffect(() => {
     const handleObserver = (entries: IntersectionObserverEntry[]) => {
@@ -46,8 +50,23 @@ export function Feed() {
   };
 
   useEffect(() => {
-    loadMorePosts();
-  }, []);
+    let timeoutId: ReturnType<typeof setTimeout> | undefined;
+    if (currentPageIndex !== feedPageIndex) {
+      startTransition(() => {
+        timeoutId = setTimeout(() => {
+          setVisiblePosts([]);
+        }, 300);
+      });
+    } else {
+      loadMorePosts();
+    }
+
+    return () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
+  }, [currentPageIndex]);
 
   const postNodes = useMemo(
     () =>

@@ -1,16 +1,24 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import { Product } from "../contexts/products-context";
 import { shuffleArray } from "../util/shuffle-array";
 import { ItemsList } from "./items-list";
+import { usePageIndex } from "../contexts/page-index-context";
 
 interface props {
   subheadings: string[];
   productsList: Product[];
+  pageIndex: number;
 }
 
-export function ItemsListScroller({ subheadings, productsList }: props) {
+export function ItemsListScroller({
+  subheadings,
+  productsList,
+  pageIndex,
+}: props) {
+  const [, startTransition] = useTransition();
   const [visibleSubheadings, setVisibleSubheadings] = useState<string[]>([]);
   const sentinelRef = useRef<HTMLDivElement>(null);
+  const currentPageIndex = usePageIndex();
 
   useEffect(() => {
     const handleObserver = (entries: IntersectionObserverEntry[]) => {
@@ -41,8 +49,21 @@ export function ItemsListScroller({ subheadings, productsList }: props) {
   }, [sentinelRef]);
 
   useEffect(() => {
-    loadMoreSubheadings();
-  }, []);
+    let timeoutId: ReturnType<typeof setTimeout> | undefined;
+    if (currentPageIndex !== pageIndex) {
+      startTransition(() => {
+        setTimeout(() => setVisibleSubheadings([]), 300);
+      });
+    } else {
+      loadMoreSubheadings();
+    }
+
+    return () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
+  }, [currentPageIndex]);
 
   const loadMoreSubheadings = () => {
     setVisibleSubheadings((prev) => {

@@ -62,6 +62,7 @@ export function Discover() {
       <Carousel items={products.slice(0, 5)} />
 
       <ItemsListScroller
+        pageIndex={1}
         subheadings={subheadings}
         productsList={shirts}
       />

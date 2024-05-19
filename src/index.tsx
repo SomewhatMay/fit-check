@@ -3,19 +3,16 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { ProductsProvider } from "./contexts/products-context";
-import { PostsProvider } from "./contexts/posts-context";
+import { RootProvider } from "./contexts/root-provider";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <ProductsProvider>
-      <PostsProvider>
-        <App />
-      </PostsProvider>
-    </ProductsProvider>
+    <RootProvider>
+      <App />
+    </RootProvider>
   </React.StrictMode>
 );
 

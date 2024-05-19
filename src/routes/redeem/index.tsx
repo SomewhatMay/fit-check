@@ -42,6 +42,7 @@ export function Redeem() {
       </div>
       <CategoryChooser />
       <ItemsListScroller
+        pageIndex={3}
         subheadings={subheadings}
         productsList={allProducts}
       />
