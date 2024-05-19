@@ -1,11 +1,18 @@
 import bellIcon from "../static/bell-icon.png";
 import hamburgerIcon from "../static/hamburger-icon.png";
+import shoppingCartIcon from "../static/shopping-cart-icon.png";
+import logo from "../logo.png";
 
 export function TopBar() {
   return (
     <div className="z-30 w-full h-[8rem] fixed top-0 font-bold px-[4rem] flex items-center bg-gray-50 shadow-md">
+      <img
+        src={logo}
+        alt={""}
+        className="h-[3.5rem] aspect-square mr-[1rem]"
+      />
       <div className="flex-grow text-5xl">FitCheck</div>
-      {[bellIcon, hamburgerIcon].map((icon) => (
+      {[shoppingCartIcon, bellIcon, hamburgerIcon].map((icon) => (
         <img
           key={icon}
           src={icon}

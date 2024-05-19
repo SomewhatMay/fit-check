@@ -49,7 +49,7 @@ export function FitBuilder() {
             alt="ai-generated-content-identifier"
             className="h-[3rem] w-[3rem] object-contain inline-block"
           />
-          recommended
+          ai recommended
         </span>
       </div>
       <div>

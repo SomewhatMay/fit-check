@@ -60,7 +60,7 @@ export function FeedCard({ post }: Props) {
         className="w-full object-cover object-top aspect-square mt-[1.75rem] rounded-[2rem] bg-black"
       />
       <div className="px-[2rem]">
-        <div className="mt-[1.5rem] flex gap-[3rem] items-center">
+        <div className="mt-[1.5rem] flex gap-[1.5rem] items-center">
           {/* Add like button */}
           {[likeIcon, commentIcon, shareIcon].map((icon, index) => {
             return (
@@ -68,13 +68,13 @@ export function FeedCard({ post }: Props) {
                 key={index}
                 src={icon}
                 alt="like"
-                className="w-[4.5rem] object-contain aspect-square"
+                className="w-[4rem] object-contain aspect-square"
               />
             );
           })}
-        </div>
-        <div className="text-4xl mt-[1.5rem] text-gray-600">
-          {readableNumber(post.likeCount)} likes
+          <div className="text-4xl mt-[0rem] text-gray-600 flex-grow text-right">
+            {readableNumber(post.likeCount)} likes
+          </div>
         </div>
         <div className="text-4xl mt-[1.5rem]">{post.caption}</div>
         <div className="text-4xl mt-[1.5rem] text-gray-600">
