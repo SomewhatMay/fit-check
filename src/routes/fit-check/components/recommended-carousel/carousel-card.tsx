@@ -37,7 +37,7 @@ export function CarouselCard({ index, fitName }: props) {
       <img
         src={carouselImages[index]}
         alt="fitImage"
-        className={`shadow-md rounded-[2rem] px-4 block w-full h-full object-contain object-[0_1rem] ${bgStyle}`}
+        className={`shadow-md rounded-[2rem] block w-full h-full object-contain object-[0_1rem] ${bgStyle}`}
       />
     </div>
   );
