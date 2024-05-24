@@ -16,7 +16,7 @@ import { Modal } from "./components/modal";
 import { useSetModal } from "./contexts/modal-context";
 
 /* Constants */
-export const version = "1.3.5";
+export const version = "1.3.7";
 export const homePage = 2;
 
 /* Root App Component */
@@ -53,7 +53,7 @@ function App() {
     () =>
       setModal(
         "Warning!",
-        "This is a concept application still under development; expect bugs and/or issues. Many buttons are not functional/responsive yet."
+        `This is a concept application still under development; expect bugs and/or issues. Many buttons are not functional/responsive. v${version}.`
       ),
     []
   );
