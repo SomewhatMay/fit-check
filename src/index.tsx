@@ -4,15 +4,18 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { RootProvider } from "./contexts/root-provider";
+import { MobileForcer } from "./components/mobile-forcer";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <RootProvider>
-      <App />
-    </RootProvider>
+    <MobileForcer>
+      <RootProvider>
+        <App />
+      </RootProvider>
+    </MobileForcer>
   </React.StrictMode>
 );
 
