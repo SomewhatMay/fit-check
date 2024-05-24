@@ -1,4 +1,4 @@
-import aiStars from "../../../../static/ai-stars.png";
+import aiStars from "../../../../static/images/ai-stars.png";
 import { Product } from "../../../../contexts/products-context";
 import { FitBuilderItem } from "./items-list";
 import { useEffect, useMemo, useState } from "react";

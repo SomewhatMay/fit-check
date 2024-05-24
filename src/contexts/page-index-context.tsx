@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from "react";
+import { homePage } from "../App";
 
 const PageContext = createContext<
   [number, React.Dispatch<React.SetStateAction<number>>] | undefined
@@ -27,7 +28,7 @@ export function useSetPageIndex() {
 }
 
 export function PageIndexProvider({ children }: { children: React.ReactNode }) {
-  const [pageIndex, setPageIndex] = useState(2);
+  const [pageIndex, setPageIndex] = useState(homePage);
   return (
     <PageContext.Provider value={[pageIndex, setPageIndex]}>
       {children}

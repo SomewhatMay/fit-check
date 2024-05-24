@@ -1,7 +1,7 @@
 import { Post } from "../../contexts/posts-context";
-import likeIcon from "../../static/like-icon.png";
-import commentIcon from "../../static/comment-icon.png";
-import shareIcon from "../../static/share-icon.png";
+import likeIcon from "../../static/images/like-icon.png";
+import commentIcon from "../../static/images/comment-icon.png";
+import shareIcon from "../../static/images/share-icon.png";
 import { readableNumber } from "../../util/readable-number";
 import { useEffect, useRef, useState } from "react";
 

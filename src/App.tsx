@@ -5,15 +5,19 @@ import { Discover } from "./routes/discover";
 import { Redeem } from "./routes/redeem";
 import { Feed } from "./routes/feed";
 import { NavView } from "./components/nav-view/nav-view";
-import feedIcon from "./static/feed-icon.png";
-import discoverIcon from "./static/discover-icon.png";
-import cameraIcon from "./static/camera-icon.png";
-import redeemIcon from "./static/redeem-icon.png";
-import settingsIcon from "./static/setting-icon.png";
+import feedIcon from "./static/images/feed-icon.png";
+import discoverIcon from "./static/images/discover-icon.png";
+import cameraIcon from "./static/images/camera-icon.png";
+import redeemIcon from "./static/images/redeem-icon.png";
+import settingsIcon from "./static/images/setting-icon.png";
 import { useMemo } from "react";
+import { SettingsPage } from "./routes/settings";
 
-const version = "1.3.5";
+/* Constants */
+export const version = "1.3.5";
+export const homePage = 4;
 
+/* Root App Component */
 function App() {
   const pages = useMemo(
     () => [
@@ -35,14 +39,7 @@ function App() {
       },
       {
         icon: settingsIcon,
-        node: (
-          <>
-            <div className="font-bold text-center text-8xl mt-[2rem]">
-              Settings Page Under Development
-            </div>
-            <div className="text-center text-5xl mt-[2rem]">v{version}</div>
-          </>
-        ),
+        node: <SettingsPage />,
       },
     ],
     []

@@ -4,7 +4,7 @@ import {
   useShirts,
   useShoes,
 } from "../../../../contexts/products-context";
-import aiStars from "../../../../static/ai-stars.png";
+import aiStars from "../../../../static/images/ai-stars.png";
 import { ItemsList } from "./items-list";
 import { shuffleArray } from "../../../../util/shuffle-array";
 

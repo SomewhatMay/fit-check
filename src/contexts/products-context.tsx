@@ -1,5 +1,5 @@
 import { createContext, useContext, useMemo } from "react";
-import productsJson from "../static/products.json";
+import productsJson from "../static/data/products.json";
 
 export type Product = {
   id: number;

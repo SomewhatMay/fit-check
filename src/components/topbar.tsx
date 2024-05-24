@@ -1,6 +1,6 @@
-import bellIcon from "../static/bell-icon.png";
-import hamburgerIcon from "../static/hamburger-icon.png";
-import shoppingCartIcon from "../static/shopping-cart-icon.png";
+import bellIcon from "../static/images/bell-icon.png";
+import hamburgerIcon from "../static/images/hamburger-icon.png";
+import shoppingCartIcon from "../static/images/shopping-cart-icon.png";
 import logo from "../logo.png";
 
 export function TopBar() {

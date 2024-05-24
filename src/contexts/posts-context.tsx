@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-import postsJson from "../static/posts.json";
+import postsJson from "../static/data/posts.json";
 
 export interface Post {
   username: string;
