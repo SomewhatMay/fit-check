@@ -13,7 +13,7 @@ export function NavView({ children }: props) {
   const pageIndex = usePageIndex();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 75);
   }, [pageIndex]);
 
   return (
