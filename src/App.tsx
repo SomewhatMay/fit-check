@@ -10,9 +10,10 @@ import discoverIcon from "./static/images/discover-icon.png";
 import cameraIcon from "./static/images/camera-icon.png";
 import redeemIcon from "./static/images/redeem-icon.png";
 import settingsIcon from "./static/images/setting-icon.png";
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { SettingsPage } from "./routes/settings";
 import { Modal } from "./components/modal";
+import { useSetModal } from "./contexts/modal-context";
 
 /* Constants */
 export const version = "1.3.5";
@@ -43,6 +44,17 @@ function App() {
         node: <SettingsPage />,
       },
     ],
+    []
+  );
+
+  /* Warn the user regarding the development status */
+  const setModal = useSetModal();
+  useEffect(
+    () =>
+      setModal(
+        "Warning!",
+        "This is a concept application still under development; expect bugs and/or issues. Many buttons are not functional/responsive yet."
+      ),
     []
   );
 
