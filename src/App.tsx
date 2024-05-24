@@ -16,7 +16,7 @@ import { Modal } from "./components/modal";
 import { useSetModal } from "./contexts/modal-context";
 
 /* Constants */
-export const version = "1.3.7";
+export const version = "1.4.1";
 export const homePage = 2;
 
 /* Root App Component */
