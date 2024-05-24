@@ -3,6 +3,7 @@ import { PostsProvider } from "../contexts/posts-context";
 import { PageIndexProvider } from "./page-index-context";
 import { SelectedBrandProvider } from "./selected-brand-context";
 import { SettingsOptionsProvider } from "./settings-options-context";
+import { ModalContextProvider } from "./modal-context";
 
 export function RootProvider({ children }: { children: React.ReactNode }) {
   return (
@@ -10,7 +11,9 @@ export function RootProvider({ children }: { children: React.ReactNode }) {
       <PostsProvider>
         <PageIndexProvider>
           <SelectedBrandProvider>
-            <SettingsOptionsProvider>{children}</SettingsOptionsProvider>
+            <SettingsOptionsProvider>
+              <ModalContextProvider>{children}</ModalContextProvider>
+            </SettingsOptionsProvider>
           </SelectedBrandProvider>
         </PageIndexProvider>
       </PostsProvider>

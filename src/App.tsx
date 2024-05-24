@@ -12,10 +12,11 @@ import redeemIcon from "./static/images/redeem-icon.png";
 import settingsIcon from "./static/images/setting-icon.png";
 import { useMemo } from "react";
 import { SettingsPage } from "./routes/settings";
+import { Modal } from "./components/modal";
 
 /* Constants */
 export const version = "1.3.5";
-export const homePage = 4;
+export const homePage = 2;
 
 /* Root App Component */
 function App() {
@@ -46,10 +47,13 @@ function App() {
   );
 
   return (
-    <div className="pb-[11.5rem]">
-      <TopBar />
-      <NavView children={pages} />
-    </div>
+    <>
+      <div className="pb-[11.5rem]">
+        <TopBar />
+        <NavView children={pages} />
+      </div>
+      <Modal />
+    </>
   );
 }
 

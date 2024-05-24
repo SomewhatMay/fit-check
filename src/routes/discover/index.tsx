@@ -66,7 +66,6 @@ export function Discover() {
         pageIndex={1}
         subheadings={subheadings}
         productsList={(() => {
-          console.log("First item is " + shuffledProducts[0].name);
           return shuffledProducts;
         })()}
         priceFormatter={(price) => `$${price}`}
